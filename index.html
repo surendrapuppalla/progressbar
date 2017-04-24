@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+   <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+   <link href="./css/style.css" rel="stylesheet">
+   
+
+</head>
+<body>
+
+<div class="container" ng-app="test" ng-controller="Ctrl">
+
+<form name="profile.demo">
+
+  <uib-progressbar animate="true" max="100" type="success" style="width: {{size(profile.demo)}}%"><b>{{size(profile.demo)}}% </b></uib-progressbar>
+
+  <input type="text" name="name" ng-model="section.name" class="form-control" required><br>
+  <span ng-show="profile.demo.name.$invalid && profile.demo.name.$dirty">please enter name</span>
+
+  <input type="text" name="lastname" ng-model="section.lastname" class="form-control" required><br>
+  <span ng-show="profile.demo.lastname.$invalid && profile.demo.lastname.$dirty">please enter lastname</span>
+
+  <input type="text" name="status" ng-model="section.status" class="form-control" required><br>
+  <span ng-show="profile.demo.status.$invalid && profile.demo.status.$dirty">please enter status</span>
+
+  <input type="text" name="address" ng-model="section.address" class="form-control" required><br>
+  <span ng-show="profile.demo.address.$invalid && profile.demo.address.$dirty">please enter address</span>
+
+  <input type="text" name="number" ng-model="section.number" class="form-control" required><br>
+  <span ng-show="profile.demo.number.$invalid && profile.demo.number.$dirty">please enter number</span>
+
+  <input type="text" name="religion" ng-model="section.religion" class="form-control" required><br>
+  <span ng-show="profile.demo.religion.$invalid && profile.demo.religion.$dirty">please enter religion</span>
+
+</div>
+
+<script src="./src/angular.js"></script>
+<script src="./bootstrap/bootstrap-tpls-2.5.0.js"></script>
+<script src="./src/lodash.js"></script>
+<script src="./src/app.js"></script>
+
+  
+</html> 
